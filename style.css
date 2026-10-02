@@ -1,0 +1,212 @@
+/* ========================================
+   CSS STYLESHEET
+   Applying all required styling elements
+   ======================================== */
+
+/* ---------- CSS Reset & Base Styles ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- Body Styling ---------- */
+/* Requirement: Font family, Background color, Text alignment */
+body {
+    font-family: 'Segoe UI', Verdana, Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* ---------- Header Styling ---------- */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* ---------- Main Heading (h1) ---------- */
+/* Requirement: Color, Font size, Visual hierarchy */
+h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 2.5em;
+    color: #ecf0f1;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+/* ---------- Subheadings (h2) ---------- */
+/* Requirement: Color, Font size, Visual hierarchy */
+h2 {
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    font-size: 1.8em;
+    color: #2980b9;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #3498db;
+}
+
+/* ---------- Paragraphs ---------- */
+/* Requirement: Text color, Readability, Margin/Padding */
+p {
+    font-size: 16px;
+    color: #444444;
+    margin-bottom: 15px;
+    padding: 5px 0;
+}
+
+/* Intro paragraph special styling */
+.intro {
+    font-size: 1.2em;
+    color: #bdc3c7;
+    font-style: italic;
+}
+
+/* ---------- Bold and Italics ---------- */
+/* Requirement: Style specific words using bold and italics */
+b {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+em {
+    color: #27ae60;
+    font-style: italic;
+}
+
+/* ---------- Links ---------- */
+/* Requirement: Link color, Remove underline */
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Link hover state using pseudo-class */
+a:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+/* ---------- Class Selector Example ---------- */
+/* This is an example of a class selector as described in the PDF */
+.more-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.more-button:hover {
+    background-color: #2980b9;
+    color: white;
+    text-decoration: none;
+}
+
+/* ---------- ID Selector Example ---------- */
+/* This is an example of an ID selector as described in the PDF */
+#about {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border-left: 5px solid #3498db;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#hobbies {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border-left: 5px solid #27ae60;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#contact {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border-left: 5px solid #e74c3c;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- Lists ---------- */
+ul {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+    padding: 3px 0;
+}
+
+/* Contact links list - remove bullets */
+.contact-links {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+/* ---------- Descendant Combinator Example ---------- */
+/* As described in the PDF - styling nested list items */
+li li {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+/* ---------- Footer Styling ---------- */
+footer {
+    background-color: #2c3e50;
+    color: #bdc3c7;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-size: 0.9em;
+}
+
+footer p {
+    color: #bdc3c7;
+    margin-bottom: 0;
+}
+
+/* ---------- Box Model Demonstration ---------- */
+/* Using margin and padding for spacing */
+section {
+    margin: 20px 0;
+    padding: 20px;
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    header {
+        padding: 25px 15px;
+    }
+}
